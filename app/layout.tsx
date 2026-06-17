@@ -19,8 +19,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mastered by pr0dk",
-  description: "Producción musical, arreglos y masterización online.",
+  title: "PR0DK RECORDS | Producción y Masterización Online",
+  description:
+    "Producción musical, arreglos y masterización online. Sin IA. Sin automatismos. Atención personalizada.",
+
+  openGraph: {
+    title: "PR0DK RECORDS",
+    description:
+      "Producción y masterización online.",
+    url: "https://pr0dkrecords.com",
+    siteName: "PR0DK RECORDS",
+    locale: "es_ES",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "PR0DK RECORDS",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
