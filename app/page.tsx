@@ -17,9 +17,7 @@ export default function Home() {
       <nav className="sticky top-0 z-50 bg-black/80 backdrop-blur border-b border-green-500/20">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-          <h1 className="text-2xl font-bold">
-            pr<span className="text-green-500">0</span>dk RECORDS
-          </h1>
+          
 
           <div className="hidden md:flex gap-8 text-sm text-gray-300">
             <a href="#servicios" className="hover:text-green-500 transition">
@@ -31,9 +29,7 @@ export default function Home() {
 </a>
             
 
-            <a href="#contacto" className="hover:text-green-500 transition">
-  Contacto
-</a>
+            
             
           </div>
 
