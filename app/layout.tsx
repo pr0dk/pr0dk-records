@@ -1,3 +1,4 @@
+import Script from "next/script";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Orbitron } from "next/font/google";
 import "./globals.css";
@@ -32,7 +33,24 @@ export default function RootLayout({
   lang="en"
   className={`scroll-smooth ${geistSans.variable} ${geistMono.variable} ${orbitron.variable} h-full antialiased`}
   >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+  {children}
+
+  <Script
+    src="https://www.googletagmanager.com/gtag/js?id=G-P8XGBZCJKG"
+    strategy="afterInteractive"
+  />
+
+  <Script id="google-analytics" strategy="afterInteractive">
+    {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-P8XGBZCJKG');
+    `}
+  </Script>
+</body>
     </html>
   );
 }
