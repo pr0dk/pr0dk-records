@@ -19,14 +19,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PR0DK RECORDS | Producción y Masterización Online",
+  title: "PR0DK RECORDS | Masterización y producción Online.",
   description:
-    "Producción musical, arreglos y masterización online. Sin IA. Sin automatismos. Atención personalizada.",
+    "Producción musical, arreglos y masterización online. Atención personalizada.",
 
   openGraph: {
     title: "PR0DK RECORDS",
     description:
-      "Producción y masterización online.",
+      "Masterización y producción Online",
     url: "https://pr0dkrecords.com",
     siteName: "PR0DK RECORDS",
     locale: "es_ES",
